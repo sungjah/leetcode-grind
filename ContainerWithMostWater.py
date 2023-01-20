@@ -1,6 +1,6 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        # BRUTE FORCE
+        # BRUTE FORCE O(n^2)
         # res = 0
         # for l in range(len(height)):
         #     for r in range(l+1, len(height)):
@@ -8,6 +8,7 @@ class Solution:
         #         res = max(res, area)
         # return res
 
+        # LINEAR TIME SOLUTION: O(n)
         res = 0
         l = 0
         r = len(height)-1
